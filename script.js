@@ -57,13 +57,19 @@ function isValidSide(side) {
   const hasSpike = side.includes("Spike");
   const hasHousekeeper = side.includes("Házvezetőnő");
 
+  // Ha a házvezetőnő ott van, minden oké
   if (hasHousekeeper) return true;
 
+  // Tom nem maradhat egyedül Jerryvel
   if (hasTom && hasJerry) return false;
-  if (hasJerry && hasSpike) return false;
 
+  // Tom nem maradhat egyedül Spike-kal
+  if (hasTom && hasSpike) return false;
+
+  // Jerry + Spike együtt oké
   return true;
 }
+
 
 function isStateValid(newState) {
   return isValidSide(newState.left) && isValidSide(newState.right);
