@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Tom & Jerry – Folyóátkelős rejtvény</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Tom & Jerry – Folyóátkelős rejtvény</h1>
+
+  <div id="game-container">
+    <div class="river-side" id="left-side">
+      <h2>Bal part</h2>
+      <div class="characters" id="left-characters"></div>
+    </div>
+
+    <div id="river">
+      <div id="boat">⛵ Házvezetőnő</div>
+    </div>
+
+    <div class="river-side" id="right-side">
+      <h2>Jobb part</h2>
+      <div class="characters" id="right-characters"></div>
+    </div>
+  </div>
+
+  <div id="controls">
+    <p>Válaszd ki, kit visz a házvezetőnő a hajóval:</p>
+    <div id="character-buttons"></div>
+    <button id="move-button">Átkelés</button>
+    <button id="reset-button">Újrakezdés</button>
+  </div>
+
+  <div id="chat-log-container">
+    <h2>Skype chat</h2>
+    <div id="chat-log"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
