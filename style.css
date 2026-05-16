@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eef4ff;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#game-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.river-side {
+  width: 30%;
+  background: #d8ffd8;
+  padding: 10px;
+  border-radius: 8px;
+  min-height: 200px;
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.character {
+  padding: 6px 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#river {
+  width: 30%;
+  height: 200px;
+  background: #9bd3ff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#boat {
+  background: #ffe7b8;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid #c28a3b;
+}
+
+#controls {
+  max-width: 900px;
+  margin: 0 auto 20px;
+}
+
+button {
+  padding: 6px 12px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+#chat-log-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#chat-log {
+  max-height: 250px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-message {
+  margin: 6px 0;
+  padding: 6px 10px;
+  border-radius: 10px;
+  max-width: 70%;
+}
+
+.chat-left {
+  background: #e6f3ff;
+  align-self: flex-start;
+}
+
+.chat-right {
+  background: #dcffe6;
+  align-self: flex-end;
+}
